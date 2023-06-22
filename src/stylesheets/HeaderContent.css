@@ -1,0 +1,48 @@
+header {
+    height: 13%;
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 40%;
+    padding-bottom: 5px;
+}
+
+.form-search {
+    border: 1px solid #F2F2F2;
+    height: 60%;
+    width: 25%;
+    border-radius: 16px;
+    background-color: white;
+    box-shadow: 0px 1px 6px 0px #0000001A;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.5%;
+}
+
+.input-search {
+    height: 100%;
+    width: 87%;
+    font-family: 'Mulish', sans-serif;
+    border: none;
+    font-size: 1rem;
+}
+
+.input-search:focus {
+    outline: none;
+}
+
+.button-search {
+    height: 40%;
+    width: 8%;
+    background-size: 100% 100%;
+    background-image: url('../images/search-interface-symbol.png');
+    border: none;
+    background-color: transparent;
+}
