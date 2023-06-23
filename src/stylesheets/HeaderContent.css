@@ -45,4 +45,5 @@ header {
     background-image: url('../images/search-interface-symbol.png');
     border: none;
     background-color: transparent;
+    cursor: pointer;
 }
