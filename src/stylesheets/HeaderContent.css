@@ -39,11 +39,15 @@ header {
 }
 
 .button-search {
-    height: 40%;
-    width: 8%;
+    height: 20px;
+    width: 20px;
     background-size: 100% 100%;
     background-image: url('../images/search-interface-symbol.png');
     border: none;
     background-color: transparent;
     cursor: pointer;
+}
+
+.button-search:disabled {
+    filter: grayscale(100%);
 }

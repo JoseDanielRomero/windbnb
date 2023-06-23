@@ -7,12 +7,49 @@
     row-gap: 5%;
     align-items: center;
     justify-content: center;
+}
+
+.stays-list-container.five-rows {
     grid-template-rows: repeat(5, 50%);
     grid-template-areas: 
     ". . ."
     ". . ."
     ". . ."
     ". . ."
+    ". . ."
+    "footer footer footer";
+}
+
+.stays-list-container.four-rows {
+    grid-template-rows: repeat(4, 50%);
+    grid-template-areas: 
+    ". . ."
+    ". . ."
+    ". . ."
+    ". . ."
+    "footer footer footer";
+}
+
+.stays-list-container.three-rows {
+    grid-template-rows: repeat(3, 50%);
+    grid-template-areas: 
+    ". . ."
+    ". . ."
+    ". . ."
+    "footer footer footer";
+}
+
+.stays-list-container.two-rows {
+    grid-template-rows: repeat(2, 50%);
+    grid-template-areas: 
+    ". . ."
+    ". . ."
+    "footer footer footer";
+}
+
+.stays-list-container.one-row {
+    grid-template-rows: 50%;
+    grid-template-areas: 
     ". . ."
     "footer footer footer";
 }

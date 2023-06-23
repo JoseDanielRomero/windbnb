@@ -10,6 +10,14 @@ function HeaderContent({ stays, setStays, search, setSearch, setActualCity, init
     setActualCity('')
   }
 
+  const handleDisabled = () => {
+    if (search.length == 0) {
+      return true
+    } else {
+      return false
+    }
+  }
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -54,7 +62,7 @@ function HeaderContent({ stays, setStays, search, setSearch, setActualCity, init
           value={search}
           onChange={handleChangeInput}
         />
-        <button type='submit' className='button-search'>
+        <button type='submit' disabled={handleDisabled()} className='button-search'>
           <div className='search-icon'>
           </div>
         </button>

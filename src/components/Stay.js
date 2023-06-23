@@ -2,8 +2,23 @@ import '../stylesheets/Stay.css'
 import star from '../images/star.png'
 
 function Stay({ stays }) {  
+
+  const rowsNumber = () => {
+    if (stays.length < 4) {
+      return 'stays-list-container one-row';
+    } else if (stays.length > 3 && stays.length < 7) {
+      return 'stays-list-container two-rows'
+    } else if (stays.length > 6 && stays.length < 10) {
+      return 'stays-list-container three-rows'
+    } else if (stays.length > 9 && stays.length < 13) {
+      return 'stays-list-container four-rows'
+    } else if (stays.length > 12 && stays.length < 16) {
+      return 'stays-list-container five-rows'
+    } 
+  }
+
   return (
-    <div className='stays-list-container'>
+    <div className={rowsNumber()}>
       {stays.map(stay => {
 
         const validateSuperHost = stay.superHost == true ? 'super-host-label' : 'super-host-label off';
