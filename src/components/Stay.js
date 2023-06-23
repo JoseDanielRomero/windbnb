@@ -1,7 +1,7 @@
 import '../stylesheets/Stay.css'
 import star from '../images/star.png'
 
-function Stay({ stays, setStays }) {  
+function Stay({ stays }) {  
   return (
     <div className='stays-list-container'>
       {stays.map(stay => {

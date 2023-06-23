@@ -3,11 +3,11 @@
     width: 100%;
     display: grid; 
     grid-template-columns: repeat(3, 30%);
-    grid-template-rows: repeat(5, 50%);
     column-gap: 5%;
     row-gap: 5%;
     align-items: center;
     justify-content: center;
+    grid-template-rows: repeat(5, 50%);
     grid-template-areas: 
     ". . ."
     ". . ."
