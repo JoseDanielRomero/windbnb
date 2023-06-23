@@ -1,7 +1,7 @@
 import '../stylesheets/Stay.css'
 import star from '../images/star.png'
 
-function Stay({ stays, setStays }) {
+function Stay({ stays, setStays }) {  
   return (
     <div className='stays-list-container'>
       {stays.map(stay => {
@@ -30,7 +30,7 @@ function Stay({ stays, setStays }) {
 
 
       })}
-
+      <footer className='footer'>created by José Daniel Romero - devChallenges.io</footer>
     </div>
   )
 }
