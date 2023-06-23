@@ -1,5 +1,6 @@
 import '../stylesheets/Stay.css'
 import star from '../images/star.png'
+import githubIcon from '../images/github.png'
 
 function Stay({ stays }) {  
 
@@ -47,7 +48,7 @@ function Stay({ stays }) {
 
 
       })}
-      <footer className='footer'>created by José Daniel Romero - devChallenges.io</footer>
+      <footer className='footer'>created by José Daniel Romero <a title='Github page' href='https://github.com/JoseDanielRomero' target='_blank'><img src={githubIcon} className='github-icon' alt='Github page'/></a> - devChallenges.io</footer>
     </div>
   )
 }
