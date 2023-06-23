@@ -31,6 +31,11 @@
     width: 100%;
     border-radius: 25px;
     object-fit: cover;
+    transition: .4s;
+}
+
+.stay-photo:hover {
+    transform: scale(1.1);
 }
 
 .stay-subtitle-box {
@@ -63,6 +68,10 @@
     padding: 0 2%;
     color: #4F4F4F;
     border: 1px solid #4F4F4F;
+}
+
+.super-host-label.off {
+    display: none;
 }
 
 .stay-type {

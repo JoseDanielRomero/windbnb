@@ -6,6 +6,8 @@ function Stay({ stays }) {
     <div className='stays-list-container'>
       {stays.map(stay => {
 
+        const validateSuperHost = stay.superHost == true ? 'super-host-label' : 'super-host-label off';
+
         return (
 
           <article className='stay-container'>
@@ -15,7 +17,7 @@ function Stay({ stays }) {
             />
             <div className='stay-subtitle-box'>
               <div className='stay-subtitle-box-left'>
-                <h6 className='super-host-label'>SUPER HOST</h6>
+                <h6 className={validateSuperHost}>SUPER HOST</h6>
                 <p className='stay-type'>{stay.type}</p>
               </div>
               <div className='stay-subtitle-box-right'>
