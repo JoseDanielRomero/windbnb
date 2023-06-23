@@ -97,7 +97,7 @@ function App() {
       "city": "Oulu",
       "country": "Finland",
       "superHost": false,
-      "title": "Beautiful new studio apartment nearby the center",
+      "title": "Beautiful new studio apartment at center",
       "rating": 4.49,
       "maxGuests": 2,
       "type": "Entire apartment",

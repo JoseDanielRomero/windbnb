@@ -12,6 +12,7 @@ function MainContent({ stays, setStays }) {
         stays={stays}
         setStays={setStays}
       />
+      
     </main>
   )
 }
