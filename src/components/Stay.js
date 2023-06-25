@@ -1,21 +1,31 @@
 import '../stylesheets/Stay.css'
 import star from '../images/star.png'
 import githubIcon from '../images/github.png'
+import {useRef} from 'react';
 
 function Stay({ stays }) {  
 
+  const windowWidth = useRef(window.innerWidth)
+  const windowWidthFix = windowWidth.current
+
   const rowsNumber = () => {
-    if (stays.length < 4) {
-      return 'stays-list-container one-row';
-    } else if (stays.length > 3 && stays.length < 7) {
-      return 'stays-list-container two-rows'
-    } else if (stays.length > 6 && stays.length < 10) {
-      return 'stays-list-container three-rows'
-    } else if (stays.length > 9 && stays.length < 13) {
-      return 'stays-list-container four-rows'
-    } else if (stays.length > 12 && stays.length < 16) {
-      return 'stays-list-container five-rows'
-    } 
+
+    if (windowWidthFix > 480) {
+      if (stays.length < 4) {
+        return 'stays-list-container one-row';
+      } else if (stays.length > 3 && stays.length < 7) {
+        return 'stays-list-container two-rows'
+      } else if (stays.length > 6 && stays.length < 10) {
+        return 'stays-list-container three-rows'
+      } else if (stays.length > 9 && stays.length < 13) {
+        return 'stays-list-container four-rows'
+      } else if (stays.length > 12 && stays.length < 16) {
+        return 'stays-list-container five-rows'
+      } 
+    } else {
+      return 'stays-list-container-mobile'
+    }
+    
   }
 
   return (

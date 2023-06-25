@@ -148,7 +148,6 @@
     font-size: .9rem;
     font-weight: 700;
     text-align: center;
-    /* padding: 2vh; */
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -174,4 +173,43 @@
 
 .github-icon:hover {
     filter: invert(73%) sepia(43%) saturate(1000%) hue-rotate(316deg) brightness(95%) contrast(87%);
+}
+
+@media screen and (max-width: 480px) {
+
+    .stays-list-container-mobile {
+        height: 85%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 6%;
+    }
+
+    .stay-container {
+        height: 55%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: space-between;
+    }
+
+    .super-host-label {
+        border-radius: 30px;
+    }
+
+    .footer {
+        padding-bottom: 50%;
+        color: #828282;
+        font-size: .9rem;
+        font-weight: 700;
+        text-align: center;
+        display: inline-block;
+        text-align: center;
+    }
+
+    .github-icon:hover {
+       filter: none;
+    }
+
 }
